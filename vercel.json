@@ -7,13 +7,8 @@
     }
   ],
   "routes": [
-    // Serve assets folder
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
-
-    // Serve tất cả file tĩnh ở root (public/) trực tiếp
     { "src": "/(.*\\.(png|jpg|jpeg|svg|gif|ico))", "dest": "/$1" },
-
-    // SPA fallback cho tất cả route khác
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
