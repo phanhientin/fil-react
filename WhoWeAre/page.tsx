@@ -17,7 +17,7 @@ const HeaderMenu = () => {
   );
 
   return (
-    <div className="min-h-screen bg-beige">
+    <div className="min-h-screen bg-beige pt-20">
       {/* Replaced local nav with shared Header component */}
       <Header />
       <section className="relative px-5 lg:px-20 py-10 lg:py-20  sm:py-8 lg:flex items-center max-w-[1440px] m-auto w-full bg-[url('/bg-line2.svg')] bg-top bg-repeat-y">
