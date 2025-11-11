@@ -7,6 +7,10 @@
     }
   ],
   "routes": [
+    // Không rewrite thư mục assets
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+
+    // SPA fallback cho mọi route khác
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
